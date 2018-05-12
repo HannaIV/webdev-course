@@ -19,8 +19,8 @@ Code piece: `code piece`.
 
 Code block:
 
-```js
-{,
+```json
+{
   'what': 'Object',
   'of type': 'JSON'
 }
