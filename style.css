@@ -2,8 +2,9 @@ header, footer {
   text-align: center;
   text-transform: uppercase;
   color: #0000FF;
-  padding: 20px;
+  padding: 22px;
   background-color: #ADD8E6;
+  font-size: 'Times'
 }
 
 footer {
@@ -12,6 +13,14 @@ footer {
   width: 100%;
 }
 
+nav {
+  font-size: 'Times'
+  text-align: left;
+  text-transform: lowercase;
+  color: #2D2BDC;
+  padding: 16px;
+  background-color: #F0E68C;
+}
 content-bar {
   color: red;
 }
