@@ -1,4 +1,4 @@
-header {
+header, footer {
   text-align: center;
   text-transform: uppercase;
   color: #0000FF;
@@ -6,11 +6,12 @@ header {
   background-color: #ADD8E6;
 }
 
-content-bar {
-  /*color: red;
-  sdvfdvdfs
-  sdvfdsvfsd
-  fdsvsdf
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
-  */
+content-bar {
+  color: red;
 }
