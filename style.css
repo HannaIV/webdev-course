@@ -2,7 +2,7 @@ header, footer {
   text-align: center;
   text-transform: uppercase;
   color: #0000FF;
-  padding: 22px;
+  padding: 26px;
   background-color: #ADD8E6;
 }
 
@@ -13,6 +13,8 @@ footer {
 }
 
 nav {
+  border: solid blue 1px;
+  width: 15%
   text-align: left;
   text-transform: lowercase;
   color: #2D2BDC;
@@ -20,7 +22,7 @@ nav {
   background-color: #F0E68C;
 }
 content-bar {
-  color: black;
+  text-align: center;
 }
 aside {
 text-align: right;
