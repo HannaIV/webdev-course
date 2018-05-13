@@ -13,6 +13,15 @@ footer {
   width: 100%;*/
 }
 
+#container{
+  border: solid green 1px;
+  background-position: 15%;
+  background-color: #F0E68C;
+}
+#article1{
+  border: solid magenta 1px;
+  margin-left: 30%;
+}
 nav {
   width: 30%;
   float: left;
@@ -25,4 +34,4 @@ nav {
 article {
   border: solid green 1px;
   margin-left: 30%;
-}
+  }
