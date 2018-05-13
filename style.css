@@ -2,39 +2,27 @@ header, footer {
   text-align: center;
   text-transform: uppercase;
   color: #0000FF;
-  padding: 26px;
+  height: 44px;
+  vertical-align: middle;
   background-color: #ADD8E6;
 }
 
 footer {
-  position: fixed;
+/*  position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100%;*/
 }
 
 nav {
-  /*border: solid blue 1px;
-  width: 15%;
-  height: 100%;*/
-  position: relative;
-  border: 5px solid #00FFFF;
-  padding: 10px;
-  height: 200px;
-  /*span:left;*/
+  width: 30%;
+  float: left;
+  /*padding: 10px;*/
   text-align: left;
-  text-transform: lowercase;
   color: #2D2BDC;
-  padding: 16px;
   background-color: #F0E68C;
 }
 
-content-bar {
+article {
   border: solid green 1px;
-  width: 68%;
-  text-align: center;
-}
-
-aside {
-  text-align: right;
-  border: solid red 1px;
+  margin-left: 30%;
 }
