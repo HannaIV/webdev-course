@@ -13,17 +13,28 @@ footer {
 }
 
 nav {
-  border: solid blue 1px;
-  width: 15%
+  /*border: solid blue 1px;
+  width: 15%;
+  height: 100%;*/
+  position: relative;
+  border: 5px solid #00FFFF;
+  padding: 10px;
+  height: 200px;
+  /*span:left;*/
   text-align: left;
   text-transform: lowercase;
   color: #2D2BDC;
   padding: 16px;
   background-color: #F0E68C;
 }
+
 content-bar {
+  border: solid green 1px;
+  width: 68%;
   text-align: center;
 }
+
 aside {
-text-align: right;
+  text-align: right;
+  border: solid red 1px;
 }
