@@ -1,11 +1,11 @@
 header {
+  font: normal bold large Times-New-Roman;
   text-align: center;
   text-transform: uppercase;
   color: #0000FF;
   background-color: #ADD8E6;
   padding:1em;
   vertical-align: middle;
-  /*margin-top:20px;;*/
 }
 
 /*#container {
@@ -15,9 +15,6 @@ header {
 }*/
 
 nav {
-  /*width:35%;
-  width: 200px;
-  color: #2D2BDC;*/
   float: left;
   background-color: #F0E68C;
 }
@@ -25,6 +22,7 @@ nav {
 article {
   background: url("football.png") repeat-y right top fixed;
   background-size: 10%;
+  font-family: Regular;
 }
 
 h1 {
@@ -33,7 +31,7 @@ h1 {
 }
 
 h4{
-padding-left: 10%;  
+padding-left: 10%;
 }
 
 img {
@@ -42,6 +40,7 @@ img {
 }
 
 footer {
+  font: normal bold large Times-New-Roman;
   text-align: center;
   text-transform: uppercase;
   color: #0000FF;
