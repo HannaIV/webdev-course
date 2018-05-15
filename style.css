@@ -3,23 +3,19 @@ header {
   text-transform: uppercase;
   color: #0000FF;
   background-color: #ADD8E6;
-  /*vertical-align: middle;*/
-}
-/*header {
-  height: 44px;
 }
 
-#container {
-  width:100%;
+/*#container {
+  width: 100%;
   background-color: #F0E68C;
   padding: 1px;
 }*/
 
 nav {
   /*width:35%;
-  width: 200px;*/
+  width: 200px;
+  color: #2D2BDC;*/
   float: left;
-  color: #2D2BDC;
   background-color: #F0E68C;
 }
 
@@ -29,8 +25,7 @@ article {
   background-position: right top;
   background-attachment: fixed;
   background-size: 10%;
-/*width:65%;
-  border: solid magenta 1px;
+  /*width:65%;
   float: left;
   margin-left: 200px;
   padding-left: 20px;
@@ -42,8 +37,9 @@ h1 {
   text-transform: uppercase;
 }
 
-img{
+img {
   margin: 20px;
+  float: left;
 }
 
 footer {
@@ -53,6 +49,6 @@ footer {
   background-color: #ADD8E6;
 }
 
-div{
+div {
   clear: both;
 }
