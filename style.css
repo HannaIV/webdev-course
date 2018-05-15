@@ -36,8 +36,17 @@ article {
   padding-left: 20px;
   */
 }
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+img{
+  margin: 20px;
+}
+
 footer {
-  /*height: 60px;*/
   text-align: center;
   text-transform: uppercase;
   color: #0000FF;
