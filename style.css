@@ -23,16 +23,8 @@ nav {
 }
 
 article {
-  background-image: url("football.png");
-  background-repeat: repeat-y;
-  background-position: right top;
-  background-attachment: fixed;
+  background: url("football.png") repeat-y right top fixed;
   background-size: 10%;
-  /*width:65%;
-  float: left;
-  margin-left: 200px;
-  padding-left: 20px;
-  */
 }
 
 h1 {
