@@ -32,6 +32,10 @@ h1 {
   text-transform: uppercase;
 }
 
+h4{
+padding-left: 10%;  
+}
+
 img {
   margin: 20px;
   float: left;
