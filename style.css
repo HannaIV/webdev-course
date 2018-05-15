@@ -3,7 +3,7 @@ header {
   text-transform: uppercase;
   color: #0000FF;
   background-color: #ADD8E6;
-  padding-top:2em;
+  padding:1em;
   vertical-align: middle;
   /*margin-top:20px;;*/
 }
@@ -50,7 +50,7 @@ footer {
   text-transform: uppercase;
   color: #0000FF;
   background-color: #ADD8E6;
-  padding-top:3em;
+  padding:2em;
   vertical-align: middle;
 }
 
