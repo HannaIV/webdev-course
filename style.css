@@ -23,7 +23,7 @@ nav {
   background-color: #F0E68C;
 }
 
-article {
+body {
   border: solid magenta 1px;
   background-image: url("football.png");
   background-repeat: repeat-y;
