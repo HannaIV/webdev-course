@@ -3,6 +3,8 @@ header {
   text-transform: uppercase;
   color: #0000FF;
   background-color: #ADD8E6;
+  padding-top:2em;
+  /*margin:*/
 }
 
 /*#container {
