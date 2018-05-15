@@ -4,7 +4,8 @@ header {
   color: #0000FF;
   background-color: #ADD8E6;
   padding-top:2em;
-  /*margin:*/
+  vertical-align: middle;
+  /*margin-top:20px;;*/
 }
 
 /*#container {
@@ -50,6 +51,7 @@ footer {
   color: #0000FF;
   background-color: #ADD8E6;
   padding-top:3em;
+  vertical-align: middle;
 }
 
 div {
