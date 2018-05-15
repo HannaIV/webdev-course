@@ -23,14 +23,19 @@ nav {
   background-color: #F0E68C;
 }
 
-/*article {
-  width:65%;
+article {
+  border: solid magenta 1px;
+  background-image: url("football.png");
+  background-repeat: repeat-y;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: 200px;
+/*width:65%;
   float: left;
   margin-left: 200px;
   padding-left: 20px;
-  border: solid transparent 1px;
-  background-color: white;
-}*/
+  background-color: white;*/
+}
 footer {
   /*height: 60px;*/
   text-align: center;
