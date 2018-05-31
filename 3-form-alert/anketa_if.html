@@ -4,26 +4,33 @@
 
 <h1>Form</h1>
 
+<button onclick="myFunction()">Try it</button>
+
 <script>
 "use strict";
 function myFunction() {
-    var txt;
     var person = prompt("Введите фамилию:", "Иванов");
-    var person = prompt("Введите имя:", "Иван");
-    var person = prompt("Введите отчество:", "Иванович");
-    var person = prompt("Ваш возраст в годах:", "50");
-    if(person == null || person == "") {
+     person += " " + prompt("Введите имя:", "Иван");
+     person += " " + prompt("Введите отчество:", "Иванович");
+      if(person == null || person == "") {
         txt = "User cancelled the prompt.";
+      }
+    var gender = confirm(ваш пол - мужской?)
+      if (gender) yes(мужской)
+      else no(женский);
+    var age = prompt("Ваш возраст в годах:", "50");
+      if (age >= 61 && gender == "") /*мужчина*/
+         (age < 61 && gender == "")  /*мужчина*/
+         (age >= 56 && gender == "") /*женщина*/
+         (age < 56 && gender == "")  /*женщина*/
+
+    /*if(confirm("ваш пол - мужской?")) {
+        gender = "Вы - мужчина!";
     }
     else {
-        txt = "Hello " + person + "! How are you today?";
+        txt = "Вы - андрогин?";
     }
-    if(confirm("ваш пол - мужской?")) {
-        txt = "Вы - мужчина!";
-    }
-    else {
-        txt = "Вы - женщина?";
-    }
+  alert(txt);*/
 }
 </script>
 </body>
