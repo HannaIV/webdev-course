@@ -21,11 +21,18 @@ function myFunction() {
         gender == "женский";
     }
     var pension;
-    if (age >= 61 || gender && age >= 56) {
+    if (age >= 61 && gender == "мужской") {
         pension == "на пенсии";
-    } else {
-      pension == "не на пенсии";
     }
+    else if (age < 61 && gender == "мужской") {
+        pension == "не на пенсии";
+    }
+    else if (age >= 56 && gender == "женский"){
+        pension == "на пенсии";
+    } else {/*(age < 56 && gender == "женский")*/
+        pension == "не на пенсии";
+    }
+
     alert(fullName + age + gender + pension);
 }
 </script>
