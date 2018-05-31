@@ -9,28 +9,8 @@
 <script>
 "use strict";
 function myFunction() {
-    var person = prompt("Введите фамилию:", "Иванов");
-     person += " " + prompt("Введите имя:", "Иван");
-     person += " " + prompt("Введите отчество:", "Иванович");
-      if(person == null || person == "") {
-        txt = "User cancelled the prompt.";
-      }
-    var gender = confirm(ваш пол - мужской?)
-      if (gender) yes(мужской)
-      else no(женский);
-    var age = prompt("Ваш возраст в годах:", "50");
-      if (age >= 61 && gender == "") /*мужчина*/
-         (age < 61 && gender == "")  /*мужчина*/
-         (age >= 56 && gender == "") /*женщина*/
-         (age < 56 && gender == "")  /*женщина*/
-
-    /*if(confirm("ваш пол - мужской?")) {
-        gender = "Вы - мужчина!";
-    }
-    else {
-        txt = "Вы - андрогин?";
-    }
-  alert(txt);*/
+    var surname = prompt("Введите фамилию:", "Иванов");
+    alert('Ваша фамилия' + ' ' + surname)
 }
 </script>
 </body>
