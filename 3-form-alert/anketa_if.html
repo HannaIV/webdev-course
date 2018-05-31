@@ -15,18 +15,18 @@ function myFunction() {
     var fullName = surname + ' ' + name + ' ' + patronymic;
     var age = prompt("Ваш возраст в годах:", "50");
     var gender = confirm("Ваш пол - мужской?");
-      if (gender = true){
-      gender = "мужской"
+    if (gender == true) {
+        gender == "мужской";
     } else {
-      gender = "женский"
+        gender == "женский";
     }
     var pension;
-      if(age >= 61){
-      pension = "на пенсии";
+    if (age >= 61 || gender && age >= 56) {
+        pension == "на пенсии";
     } else {
-      pension = "не на пенсии"
+      pension == "не на пенсии";
     }
-    alert(fullName)
+    alert(fullName + age + gender + pension);
 }
 </script>
 </body>
