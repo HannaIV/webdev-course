@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Form</h1>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+"use strict";
+function myFunction() {
+    var surname = prompt("Введите фамилию:", "Иванов");
+    var name = prompt("Введите имя:", "Иван");
+    var patronymic = prompt("Введите отчество:", "Иванович");
+    var fullName = surname + ' ' + name + ' ' + patronymic;
+    var age = prompt("Ваш возраст в годах:", "50");
+    var gender = confirm("Ваш пол - мужской?");
+      var bin = true;
+      var value = bin? "мужской" : "женский";
+      alert(value);
+    var pension;
+      if(age >= 61){
+      pension = "на пенсии";
+    } else {
+      pension = "не на пенсии"
+    }
+    alert(fullName)
+}
+</script>
+</body>
+</html>
