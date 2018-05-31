@@ -10,7 +10,10 @@
 "use strict";
 function myFunction() {
     var surname = prompt("Введите фамилию:", "Иванов");
-    alert('Ваша фамилия' + ' ' + surname)
+    var name = prompt("Введите имя:", "Иван");
+    var patronymic = prompt("Введите отчество:", "Иванович");
+    var fullName = surname + ' ' + name + ' ' + patronymic;
+    alert(fullName)
 }
 </script>
 </body>
