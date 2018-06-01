@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<h1>Form</h1>
-
-<button onclick="myFunction()">Try it</button>
+<button onclick="questionnaire()">Запустить Анкету</button>
 
 <script>
 "use strict";
-function myFunction() {
-    var surname = prompt("Введите фамилию:", "Иванов");
-    var name = prompt("Введите имя:", "Иван");
-    var patronymic = prompt("Введите отчество:", "Иванович");
-    var fullName = surname + ' ' + name + ' ' + patronymic;
-    var age = prompt("Ваш возраст в годах:", "50");
-    var gender = confirm("Ваш пол - мужской?");
-    if (gender == true) {
-        gender == "мужской";
-    } else {
-        gender == "женский";
-    }
-    var pension;
-    if (age >= 61 && gender == "мужской") {
-        pension == "на пенсии";
-    }
-    else if (age < 61 && gender == "мужской") {
-        pension == "не на пенсии";
-    }
-    else if (age >= 56 && gender == "женский"){
-        pension == "на пенсии";
-    } else {/*(age < 56 && gender == "женский")*/
-        pension == "не на пенсии";
-    }
+function questionnaire() {
+  var surname = prompt("Введите фамилию:", "Иванов");
+  var name = prompt("Введите имя:", "Иван");
+  var patronymic = prompt("Введите отчество:", "Иванович");
+  var age = prompt("Ваш возраст в годах:", "50");
+  var isMan = confirm("Ваш пол - мужской?");
 
-    alert(fullName + age + gender + pension);
+  var gender;
+  if (isMan) {
+    gender = "мужской";
+  } else {
+    gender = "женский";
+  }
+
+  var pension;
+  if (age >= 61 || !isMan && age >= 56) {
+    pension = "да";
+  } else {
+    pension = "нет";
+  }
+
+  alert(surname + ' ' + name + ' ' + patronymic + '.\nВозраст: ' + age + '.\nПол ' + gender + '.\nПенсионный возраст: ' + pension + '.');
 }
 </script>
 </body>
