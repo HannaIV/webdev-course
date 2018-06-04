@@ -9,13 +9,13 @@
 function findLongestWord() {
   var longestWord = "";
   var s = /*prompt(*/"спросить у пользователя текст произвольной длины";
-  var s = s.split(" ");
-  for (var i = 0; i < s.length; i++) {
-    if (longestWord.length < s[i].length) {
-      longestWord = s[i];
+  var a = s.split(" ");
+  for (var i = 0; i < a.length; i++) {
+    if (longestWord.length < a[i].length) {
+      longestWord = a[i];
     }
   }
-    alert (longestWord);
+  alert (longestWord);
 }
   //if (l < 1 || !Number.isInteger(l)){
     //throw "Incorrect l = + l";}
