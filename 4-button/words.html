@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta charset=utf-8 />
 <body>
 <button onclick="findLongestWord()">Ввести текст</button>
 
@@ -10,12 +11,16 @@ function findLongestWord() {
   var s = prompt("спросить у пользователя текст произвольной длины");
   var s = s.split(" ");
   for (var i = 0; i < s.length; i++) {
-    if (s[i].length > l) {l = s[i].length;}
+    if (s[i].length > l) {
+      l = s[i].length;
+      var w = s[i];
     }
-    alert(l);
+  }
+    alert (w);
+}
   //if (l < 1 || !Number.isInteger(l)){
     //throw "Incorrect l = + l";}
-}
+
 </script>
 </body>
 </html>
