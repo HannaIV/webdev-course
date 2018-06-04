@@ -7,14 +7,14 @@
 "use strict";
 function findLongestWord() {
   var l = 0;
-  var s = "спросить у пользователя текст произвольной длины";
-  var w = s.split(" ");
-    for (var i = 0; i < w.length; i ++ ) {
-      var b = w [ i ];
-      var sl = b.length;
-      if (sl > l) {l = sl;}
+  var s = prompt("спросить у пользователя текст произвольной длины");
+  var s = s.split(" ");
+  for (var i = 0; i < s.length; i++) {
+    if (s[i].length > l) {l = s[i].length;}
     }
     alert(l);
+  //if (l < 1 || !Number.isInteger(l)){
+    //throw "Incorrect l = + l";}
 }
 </script>
 </body>
