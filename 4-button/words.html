@@ -7,16 +7,16 @@
 <script>
 "use strict";
 function findLongestWord() {
-  var l = 0;
+  var longestWord = " ";
   var s = prompt("спросить у пользователя текст произвольной длины");
   var s = s.split(" ");
   for (var i = 0; i < s.length; i++) {
-    if (s[i].length > l) {
-      l = s[i].length;
-      var w = s[i];
+    if (longestWord.length < s[i].length) {
+      longestWord.length = s[i].length;
+      var word = s[i];
     }
   }
-    alert (w);
+    alert (word);
 }
   //if (l < 1 || !Number.isInteger(l)){
     //throw "Incorrect l = + l";}
