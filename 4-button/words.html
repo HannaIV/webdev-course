@@ -15,11 +15,14 @@ function findLongestWord() {
       longestWord = a[i];
     }
   }
-  alert (longestWord);
-}
-  //if (l < 1 || !Number.isInteger(l)){
-    //throw "Incorrect l = + l";}
+  var c = a.sort(function(w, b) {return w.length <= b.length});
+  console.log(c);
+  c = c.slice(0,3);
+  console.log(c);
 
+  // alert (longestWord);
+}
+window.onload = findLongestWord;
 </script>
 </body>
 </html>
