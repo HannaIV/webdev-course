@@ -11,14 +11,15 @@
       for (var i = 1; i <= 10; i++) {
         var fPr = 1;
         var f = 1;
-        for(var j = 3; j <= n; j ++){
+        for (var j = 3; j <= n; j++) {
           var fPrPr = fPr;
           fPr = f;
           f = fPr + fPrPr;
         }
       }
-    console.log(f);
+      console.log(f);
     }
+    window.onload = fib;
   </script>
 </body>
 
