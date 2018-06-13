@@ -4,13 +4,23 @@
 
 <body>
 
+  <h1>Recursion</h1>
+
   <script>
     "use strict";
-
     function fib(n) {
       return n > 2 ? fib(n - 1) + fib(n - 2) : 1;
     }
-    console.log(fib(3));
+    function run() {
+      for (var n = 1; true; n++) {
+          var f = fib(n);
+          if (f >= 1000) {
+            break;
+          }
+          console.log(f);
+        }
+      }
+      window.onload = run;
   </script>
 </body>
 
