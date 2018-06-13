@@ -7,20 +7,21 @@
 <script>
 "use strict";
 function findLongestWord() {
-  var longestWord = "";
-  var s = /*prompt(*/"спросить у пользователя текст произвольной длины";
-  var a = s.split(" ");
-  for (var i = 0; i < a.length; i++) {
-    if (longestWord.length < a[i].length) {
-      longestWord = a[i];
-    }
-  }
-  var c = a.sort(function(w, b) {return w.length <= b.length});
-  console.log(c);
-  c = c.slice(0,3);
-  console.log(c);
+  var text = prompt("спросить у пользователя текст произвольной длины");
+  var textArr = text.split(" ");
+  var newArr = textArr.sort(compare);
 
-  // alert (longestWord);
+  console.log('Три самых длинных слова : ' + newArr[0] + ";" + newArr[1] + ";" + newArr[2]);
+
+  function compare(a, b) {
+  if (a.length > b.length) {
+    return -1;
+  }
+  if (a.length < b.length) {
+    return 1;
+  }
+  return 0;
+}
 }
 window.onload = findLongestWord;
 </script>
