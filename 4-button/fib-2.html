@@ -4,20 +4,23 @@
 
 <body>
 
+  <h1>Cycle</h1>
+
   <script>
     "use strict";
-    function fib(n) {
-      var fPrevious = 1;
-      var f = 1;
-      var result = f;
-      for (var i = 0; i <= 10; i++) {
-        console.log(result + "<br/>");
-        result = fPrevious + f;
-        fPrevious = f;
-        f = result;
+
+    function fib() {
+      for (var n = 1; n <= 1000; n++) {
+        var fPr = 1;
+        var f = 1;
+        for (var j = 3; j <= n; j++) {
+          var fPrPr = fPr;
+          fPr = f;
+          f = fPrPr + fPr;
+        }
+        console.log(f);
       }
     }
-
     window.onload = fib;
   </script>
 </body>
