@@ -6,19 +6,18 @@
 
   <script>
     "use strict";
-
     function fib(n) {
-      for (var i = 1; i <= 10; i++) {
-        var fPr = 1;
-        var f = 1;
-        for (var j = 3; j <= n; j++) {
-          var fPrPr = fPr;
-          fPr = f;
-          f = fPr + fPrPr;
-        }
+      var fPrevious = 1;
+      var f = 1;
+      var result = f;
+      for (var i = 0; i <= 10; i++) {
+        console.log(result + "<br/>");
+        result = fPrevious + f;
+        fPrevious = f;
+        f = result;
       }
-      console.log(f);
     }
+
     window.onload = fib;
   </script>
 </body>
