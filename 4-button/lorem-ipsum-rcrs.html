@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<meta charset=utf-8 />
+
+<body>
+  <ul id="words-backwards"></ul>
+
+  <script>
+    function loremIpsum() {
+      var text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the" +
+        " industry's standard dummy text ever since the 1500s";
+
+      var words = text.split(" ");
+      logBackWords(words);
+      console.log(document.getElementById('words-backwards').innerHTML);
+    }
+
+    function logBackWords(words) {
+      if (words.length != 0) {
+        var word = words.pop();
+        console.log(word);
+        var elem = document.getElementById('words-backwards');
+        elem.innerHTML += '<li>' + word + '</li>';
+        logBackWords(words);
+      }
+    }
+
+    window.onload = loremIpsum;
+  </script>
+
+</body>
+
+</html>

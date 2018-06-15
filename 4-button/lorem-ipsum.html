@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<meta charset=utf-8 />
+
+<body>
+
+  <script>
+    "use strict";
+
+    function LoremIpsum() {
+      var text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s";
+      var words = text.split(" ");
+      for (var i = words.length - 1; i >= 0; i--) {
+        console.log(words[i]);
+      }
+    }
+
+    window.onload = LoremIpsum;
+  </script>
+
+</body>
+
+</html>
