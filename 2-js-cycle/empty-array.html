@@ -9,8 +9,13 @@
     function emptyArray() {
       var arr = [ ];
       for (var i = 0; i < 101; i++) {
-        arr.push(i);
-        console.log(arr[i]);
+        var odd, ever;
+        if (arr[i] % 2 == 0) {
+          odd.push(arr[i]);
+        } else {
+          ever.push(arr[i]);
+        }
+        console.log(arr);
       }
     }
 
