@@ -3,19 +3,29 @@
 <meta charset=utf-8 />
 
 <body>
-  <!--<ul id="words-backwards"></ul>-->
+  <ul id="full1-array"></ul>
+  <ul id="full2-array"></ul>
 
   <script>
     function emptyArray() {
-      var arr = [ ];
+      var arr = [];
       for (var i = 0; i < 101; i++) {
-        var odd, ever;
-        if (arr[i] % 2 == 0) {
-          odd.push(arr[i]);
-        } else {
-          ever.push(arr[i]);
-        }
-        console.log(arr);
+        arr.push(i);
+        //console.log(arr);
+      }
+      for (var i = 0; i <= 100; i+=2) {
+        //console.log(arr[i]);
+        var elem1 = document.getElementById('full1-array');
+        elem1.innerHTML += '<li>' + arr[i] + '</li>';
+        console.log(document.getElementById('full1-array').innerHTML);
+
+      }
+      for (var i = 99; i > 0; i-=2) {
+        //console.log(arr[i]);
+        var elem2 = document.getElementById('full2-array');
+        elem2.innerHTML += '<li>' + arr[i] + '</li>';
+        console.log(document.getElementById('full2-array').innerHTML);
+
       }
     }
 
