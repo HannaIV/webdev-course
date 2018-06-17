@@ -3,10 +3,10 @@
 
 <body>
 
-  <h1>Prime numbers</h1>
+  <h1>List of primes</h1>
   <ul id="prime-numbers"></ul>
 
-  <h2>Not prime numbers</h2>
+  <h2>List of nor primes</h2>
   <ul id="not-prime-numbers"></ul>
 
   <script>
@@ -18,25 +18,22 @@
       " electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release" +
       " of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software" +
       "like Aldus PageMaker including versions of Lorem Ipsum."
-    //var text = "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15"
     var array = text.split(" ");
-    //console.log(array);
+    var listOfPrimes = document.getElementById("prime-numbers");
+    var listOfNotPrimes = document.getElementById("not-prime-numbers");
 
-    for (var i = 1; i < 15; i++) {
+    for (var i = 0; i < array.length; i++) {
+      var j = array.length - i;
       if (isPrime(i)) {
-        //console.log(array[i]);
-        var elem1 = document.getElementById("prime-numbers");
-        elem1.innerHTML += "<li>" + array[i] + "</li>";
-        console.log(document.getElementById("prime-numbers").innerHTML);
-      } else {
-        var elem2 = document.getElementById("not-prime-numbers");
-        elem2.innerHTML += "<li>" + array[i] + "</li>";
-        console.log(document.getElementById("not-prime-numbers").innerHTML);
+        listOfNotPrimes.innerHTML += "<li>" + [i] + " " + array[i] + "</li>";
+        console.log(listOfNotPrimes.innerHTML);
+        listOfPrimes.innerHTML += "<li>" + [j] + " " + array[j] + "</li>";
+        console.log(listOfPrimes.innerHTML);
       }
     }
 
     function isPrime(a) {
-      if (a == 1) {
+      if (a == 1 || a == 0) {
         return false;
       }
       if (a == 2 || a == 3) {
