@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <body>
-<button onclick="questionnaire()">Запустить Анкету</button>
+  <button onclick="questionnaire()">Запустить Анкету</button>
 
-<script>
-"use strict"
+  <script>
+    "use strict"
 
-function questionnaire() {
-  var fullname = prompt("Введите фамилию, имя, отчество :", "Иванов Иван Иванович");
-  var age = prompt("Ваш возраст в годах:", "50");
-  var isMan = confirm("Ваш пол - мужской?");
-  var maritalStatus = prompt("Введите семейное положение:", "холост");
-  var footSize = prompt("Введите размер стопы:", "37");
-  var address = prompt("Ваш адрес:", "Советский союз");
-
-
-  var gender;
-  if (isMan) {
-    gender = "мужской";
-  } else {
-    gender = "женский";
-  }
+    function questionnaire() {
+      let fullname = prompt("Введите фамилию, имя, отчество :", "Иванов Иван Иванович");
+      let age = prompt("Ваш возраст в годах:", "50");
+      let isMan = confirm("Ваш пол - мужской?");
+      let maritalStatus = prompt("Введите семейное положение:", "холост");
+      let footSize = prompt("Введите размер стопы:", "37");
+      let address = prompt("Ваш адрес:", "Советский союз");
 
 
-  alert(`${fullname}
-    Возраст: ${age}
+      let gender;
+      if (isMan) {
+        gender = "мужской";
+      } else {
+        gender = "женский";
+      }
+      let adult;
+      if (age >= 18) {
+        adult = "совершеннолетний";
+      } else {
+        adult = "несовершеннолетний";
+      }
+
+      alert(`${fullname}
+    Возраст: ${age} ${adult}
     Пол: ${gender}
     Cемейное положение: ${maritalStatus}
     Размер стопы: ${footSize}
-    Адрес: ${address} .`);
-}
-</script>
+    Адрес: ${address}`);
+    }
+    questionnaire()
+  </script>
 </body>
+
 </html>
